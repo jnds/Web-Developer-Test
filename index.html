@@ -2,14 +2,88 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Project Title</title>
+	<title>Web Developer Test</title>
 	<link rel="stylesheet" href="library/css/style.css">
 </head>
 
 <body id="home">
+	
+	<header>
+		<a href="/" title="Return to the homepage" id="logo">
+		  <img src="library/images/logo.png" alt="Nike logo" />
+		</a>
+	</header>
+	
+	<main>
+		<h2>Your Basket</h2>
+	  
+		<p>Items you have added to your basket are shown below.<br/>Adjust the quantities or remove items before continuing your purchase.</p>
 
-	<h1>HTML5 Project</h1>
+		<form action="/" name="checkout-form">
+			<table>
+			  	<thead>
+				    <tr>
+				      <th>Product</th>
+				      <th>Price</th>
+				      <th>Qty</th>
+				      <th>Cost</th>
+				      <th class="delete-product-header"></th>
+				    </tr>
+			    </thead>
+			  	<tbody>
+				    <tr>
+				    	<td>Cotton T-Shirt, Medium</td>
+				    	<td>£1.99</td>
+				    	<td>
+				     		<input type="number" value="1" name="qty-input" min="1" max="999" title="Item Quantity" aria-label="Item Quantity"/>
+				    	</td>
+						<td>£1.99</td>
+				    	<td class="delete-product"></td>
+				    </tr>
+				    <tr>
+				    	<td>Baseball Cap, One Size</td>
+				    	<td>£2.99</td>
+				    	<td>
+				        	<input type="number" value="2" name="qty-input" min="1" max="999" title="Item Quantity" aria-label="Item Quantity"/>
+				    	</td>
+						<td>£5.98</td>
+				    	<td class="delete-product"></td>
+				    </tr>
+				    <tr>
+				    	<td>Swim Shorts, Medium</td>
+				    	<td>£3.99</td>
+				    	<td>
+				        	<input type="number" value="1" name="qty-input" min="1" max="999" title="Item Quantity" aria-label="Item Quantity"/>
+				    	</td>
+						<td>£3.99</td>
+				    	<td class="delete-product"></td>
+				    </tr>
+				    <tr class="subtotal">
+				    	<td colspan="3">Subtotal:</td>
+				     	<td colspan="2">£11.96</td>
+				    </tr>
+				    <tr class="vat">
+				    	<td colspan="3">VAT:</td>
+				    	<td colspan="2">£2.39</td>
+				    </tr>
+				    <tr class="total-cost">
+				    	<td colspan="3">Total Cost:</td>
+				    	<td colspan="2">£14.35</td>
+				    </tr>
+			    <tbody>
+			</table>
+	  
+			<div class="btn-buy-now">
+		 		<button>Buy Now</button>
+			</div>
+		</form>		
+	</main>
 
-	<button>Go</button>
+	<footer>
+		 <small>
+		 	<strong>&copy; Copyright AKQA Ltd.</strong> Registered in England: 2964394
+		 </small>
+	</footer>
+
 </body>
 </html>
