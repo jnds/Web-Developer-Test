@@ -4,17 +4,35 @@
 ---------------------------------
 */
 
+// Header
+
+#page-header{
+	width: 96%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+
+@media (min-width:$screen-md-min) {
+  
+  #page-header{
+	width: 80%;
+	margin: 0 auto;
+	padding: 80px 0;
+  }
+
+} 
+
+
 
 // Logo
 
-.logo{ 
-
+#logo{ 
+	width: 120px;
+	display: block;
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 }
-
-
-// Header
-
-.header{
-	
-}
-

@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
 
 function setup( ) {
 
-  console.log('setup')
+  console.log('setup');
 
 }
 

@@ -1,0 +1,22 @@
+/*
+---------------------------------
+ MAIN CONTENT SECTION
+---------------------------------
+*/
+
+
+.page-content{
+	width: 96%;
+	margin: 0 auto;
+}
+
+
+@media (min-width:$screen-md-min) {
+  
+  .page-content{
+	width: 80%;
+	margin: 0 auto;
+  }
+
+} 
+

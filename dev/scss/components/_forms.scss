@@ -25,5 +25,7 @@ select,
 textarea,
 .field {
 	background-color: $white;
+	border: 1px solid $dark-grey;
+	padding: 3px;
 }
 

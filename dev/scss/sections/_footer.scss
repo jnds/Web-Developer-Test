@@ -6,27 +6,32 @@
 
 // Footer
 
-.footer{
+.page-footer{
+	background-color: $dark-grey;
+	color: $white;
+
 	
-	
-	nav, 
-	ul, 
-	li{
-		
-	}
-	a{
-		
-	}
-	a:hover,
-	.current-menu-item a,
-	li.active a{
-		
+	.page-footer-inner{
+		width: 96%;
+		margin: 0 auto;
+		display: block;
+		line-height: 50px;
+		font-size: 12px;
+		overflow: hidden;
 	}
 }
 
 
-// Footer Copyright
 
-.footer__copyright{
-	
-}
+
+
+@media (min-width:$screen-md-min) {
+  
+	.page-footer{
+		.page-footer-inner{
+			width: 80%;
+			font-size: 16px;
+		}
+	}
+
+} 

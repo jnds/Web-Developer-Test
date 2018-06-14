@@ -5,12 +5,32 @@ BASIC PAGE LAYOUT STYLES
 */
 
 
-// Main Section
+// Sticky Footer
 
-main{
-	
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.page-wrapper {
+  min-height: 100%;
+}
+.page-wrapper-inner {
+  //padding: 20px;
+  padding-bottom: 50px;
+}
+.page-footer {
+  height: 50px;
+  margin-top: -50px;
 }
 
-h1{ color: green; }
+
+
+// Body Style
+
+body{
+	background: url('../images/gradient.jpg') center center repeat-y;
+	background-size: 100%;
+}
+
 
 
