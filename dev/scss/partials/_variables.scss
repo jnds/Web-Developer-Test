@@ -1,13 +1,18 @@
+
+
+$screen-xs-min   : 400px;
+$screen-sm-min   : 800px;
+$screen-md-min   : 1200px;
+$screen-lg-min   : 1600px;
+
 /* COLORS */
 
 $white 				: rgb(255,255,255);
 $black 				: rgb(0,0,0);
 $navy 				: rgb(0,0,102);
 
-
-$grey 				: rgb(125,125,125);
+$dark-grey 	        : rgb(102,102,102);
 $medium-grey 	    : rgb(153,153,153);
-
 
 /* BASELINE AND TYPOGRAPHY */
 

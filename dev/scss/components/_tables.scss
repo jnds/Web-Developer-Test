@@ -7,9 +7,50 @@ TABLES
 table,
 .table{
 	
+	width: 100%;
+	margin: 40px 0;
+
+	thead{
+		border-bottom: 1px solid #000000;
+	}
+	tbody:before {
+	    content: "-";
+	    display: block;
+	    line-height: 1em;
+	    color: transparent;
+	}
+
 	th,
 	.th{
 		font-weight:normal;
-		
+		text-align: left;
 	}
+	
+	td, th {
+    	padding: 5px 0;
+	}
+
+	td input.checkout-qty {
+		width: 40px;
+	}
+
+	tr.subtotal td{
+		padding-top: 40px;
+	}
+
+	tr.total-cost td{
+		padding-top: 40px;
+	}
+
+	td.delete-product span{
+	  width: 30px; 
+	  height: 30px;
+	  background: url('../images/rubbish-bin.png') center center no-repeat;
+	  background-size: 22px 22px;
+	  text-indent: -9999px;
+	  display: block;
+	  cursor: pointer;
+	}
+
 }
+
