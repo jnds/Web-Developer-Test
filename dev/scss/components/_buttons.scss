@@ -12,10 +12,11 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button {
-	background: red;
+	background: $navy;
 	border: 0;
-	border-radius:0;
-	color: inherit;
+	border-radius: 10px;
+	padding: 10px;
+	color: $white;
 	outline: none;
 	
 }
