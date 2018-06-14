@@ -2,50 +2,67 @@
 This file loaded in the footer
 */
 
-/*
- * Get Viewport Dimensions
- * returns object with viewport dimensions to match css in width and height properties
- * ( source: http://andylangton.co.uk/blog/development/get-viewport-size-width-and-height-javascript )
-*/
-function updateViewportDimensions() {
-	var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight;
-	return { width:x,height:y };
-}
-// setting the viewport width
-var viewport = updateViewportDimensions();
-
-/*
- * Throttle Resize-triggered Events
- * Wrap your actions in this function to throttle the frequency of firing them off, for better performance, esp. on mobile.
- * ( source: http://stackoverflow.com/questions/2854407/javascript-jquery-window-resize-how-to-fire-after-the-resize-is-completed )
-*/
-var waitForFinalEvent = (function () {
-	var timers = {};
-	return function (callback, ms, uniqueId) {
-		if (!uniqueId) { uniqueId = "Don't call this twice without a uniqueId"; }
-		if (timers[uniqueId]) { clearTimeout (timers[uniqueId]); }
-		timers[uniqueId] = setTimeout(callback, ms);
-	};
-})();
-
-// how long to wait before deciding the resize has stopped, in ms. Around 50-100 should work ok.
-var timeToWaitForLast = 100;
-
-
+var subtotal, vat, totalCost;
 
 jQuery(document).ready(function($) {
-  setup();
-   
+  
+  calculateSubtotal();
+  calculateVat();
+  calculateTotal();
+  updateQuantities();
+  deleteProduct();
+
+ 
 }); /* end of as page load scripts */
 
 
 
-function setup( ) {
+function calculateSubtotal() {
+	subtotal = 0;
 
-  console.log('setup');
+  	$(".cost-value").each( function () {
+	  	subtotal += parseFloat($(this).text(), 10);
+	  	console.log(subtotal);
+  	});
+
+  	$('.subtotal-value').text(subtotal.toFixed(2));
+}
+
+function calculateVat() {
+	vat = subtotal * 0.2;
+
+  	$('.vat-value').text(vat.toFixed(2));
+}
+
+function calculateTotal() {
+	total = subtotal + vat;
+
+  	$('.totalcost-value').text(total.toFixed(2));
+}
+
+function updateQuantities() {
+
+  	$(":input.checkout-qty").on('keyup mouseup', function () {
+	  	var newQuantity = $(this).val();
+	  	var itemPrice = $(this).closest('tr').find('.price-value').text();
+	  	var newCost = newQuantity*itemPrice;
+	  	$(this).parents('tr').find('.cost-value').text(newCost.toFixed(2));
+
+	  	  calculateSubtotal();
+		  calculateVat();
+		  calculateTotal();
+  	});
 
 }
 
+function deleteProduct(){
+	$(".delete-product span").on('keyup mouseup', function () {
+		var itemPrice = $(this).closest('tr').remove();
+		  calculateSubtotal();
+		  calculateVat();
+		  calculateTotal();
+	});
+}
 
 
           
