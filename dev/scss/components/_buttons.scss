@@ -1,0 +1,30 @@
+/*
+---------------------------------
+BUTTONS
+---------------------------------
+*/
+
+
+// Inputs
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+	background: red;
+	border: 0;
+	border-radius:0;
+	color: inherit;
+	outline: none;
+	
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+.btn{
+	
+}
