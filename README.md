@@ -1,6 +1,6 @@
 # Intro
 - Open index.HTML to run the demo
-- See Dev folder for source code 
+- See "Dev" folder for source code 
 - See "Library" folder for processed code (CSS & JS are left unminified for readability)
 
 
@@ -35,8 +35,8 @@ Used object literal pattern (with jQuery) to demonstrate the following:
 
 
 # To do:
-- Disable Buy Now button when basket is empty
+- Disable "Buy Now" button when basket is empty
 - Implement AJAX to post JSON formatted product data to a REST API endpoint
-- Determine a more suitable pattern for checkout module / incorporate a JS framework
+- Determine a more suitable pattern for basket module / incorporate a JS framework
 - Refine styles to accurately match the creative mockup
 - Test Microsoft Edge
