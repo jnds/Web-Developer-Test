@@ -3,14 +3,16 @@
 - See Dev folder for source code 
 - See "Library" folder for processed code (CSS & JS are left unminified for readability)
 
+
 # HTML 
-markup added and validated according to w3c Markup Validation Service
+- markup added and validated according to w3c Markup Validation Service
+
 
 # CSS
-used Sass CSS processor with separate files for components. 
-Includes basic layouts & mobile first approach for responsive design
-See Dev > SCSS for uncompiled scss components
-See Library > CSS > style.css for compiled CSS file
+- used Sass CSS processor with separate files for components. 
+- Includes basic layouts & mobile first approach for responsive design
+- See Dev > SCSS for uncompiled scss components
+- See Library > CSS > style.css for compiled CSS file
 
 
 # JavaScript 
@@ -21,8 +23,7 @@ Used object literal pattern (with jQuery) to demonstrate the following:
 
 
 # Task Runners 
-
-run npm install to install Gulp dependencies
+- run "npm install" to install Gulp dependencies
 
 ## Gulp commands
 
