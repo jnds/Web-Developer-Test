@@ -1,12 +1,14 @@
 /*
- * object literal pattern used to demonstrate simple modular javascript approach
+ * Object literal pattern (with jQuery) used to demonstrate the following:
+ * - simple modular javascript approach, 
+ * - scalability/separation of concerns 
+ * - efficient DOM usage
  *
- * TO DO:
- * Determine a more suitable pattern for checkout module
- * Implent AJAX to post JSON data to rest API endpoint
+ * To do:
+ * - Implement AJAX to post data in JSON format to a REST API endpoint
+ * - Determine a more suitable pattern for checkout module / incorporate a JS framework
  *
  */
-
 
 var basket = {
     subtotal: 0,

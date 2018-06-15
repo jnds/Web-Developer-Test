@@ -151,7 +151,17 @@ h1 {
 
 /*
 ---------------------------------
-BASIC PAGE LAYOUT STYLES
+BASIC PAGE LAYOUT STYLES 
+---------------------------------
+*/
+body {
+  background: url("../images/gradient.jpg") center center repeat-y;
+  background-size: 100%;
+}
+
+/*
+---------------------------------
+PAGE WRAPPER & STICKY FOOTER
 ---------------------------------
 */
 html, body {
@@ -170,11 +180,6 @@ html, body {
 .page-footer {
   height: 50px;
   margin-top: -50px;
-}
-
-body {
-  background: url("../images/gradient.jpg") center center repeat-y;
-  background-size: 100%;
 }
 
 /*
