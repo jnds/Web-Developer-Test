@@ -15,6 +15,7 @@ var imagemin = require('gulp-imagemin');
 // JS paths
 var jsFiles = 'dev/js/**/*.js',
 	jsLib = 'dev/js/libs/*.js',
+	jsApp = 'dev/js/app/*.js',
 	jsDest = 'library/js';
 
 // CSS paths
@@ -39,6 +40,7 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {  
 	return gulp.src([
 		jsLib,
+		jsApp,
 		'dev/js/scripts.js'
 	])
 	.pipe(concat('scripts.js'))
