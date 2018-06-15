@@ -1,3 +1,13 @@
+/*
+ * object literal pattern used to demonstrate simple modular javascript approach
+ *
+ * TO DO:
+ * Determine a more suitable pattern for checkout module
+ * Implent AJAX to post JSON data to rest API endpoint
+ *
+ */
+
+
 var basket = {
     subtotal: 0,
     vat: 0,

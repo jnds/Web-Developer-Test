@@ -4,13 +4,6 @@ BUTTONS
 ---------------------------------
 */
 
-
-// Inputs
-
-/* Reset `button` and button-style `input` default styles */
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
 button {
 	background: $navy;
 	border: 0;
@@ -18,14 +11,5 @@ button {
 	padding: 10px;
 	color: $white;
 	outline: none;
-	
-}
-input::-moz-focus-inner,
-button::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
-
-.btn{
 	
 }

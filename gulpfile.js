@@ -3,14 +3,13 @@
 var gutil = require('gulp-util');
 
 var gulp = require('gulp');
-//var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var del = require('del');
-//var imagemin = require('gulp-imagemin');
+
 
 // JS paths
 var jsFiles = 'dev/js/**/*.js',
@@ -29,10 +28,8 @@ var imgFiles = 'dev/images/**/*',
 // Watch .scss files
 gulp.task('sass', function() {
 	return gulp.src(scssFiles)
-	.pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
-	//.pipe(sourcemaps.init())
+	.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 	.pipe(autoprefixer())
-	//.pipe(sourcemaps.write('.'))
 	.pipe(gulp.dest(cssDest));
 });
 
@@ -50,20 +47,6 @@ gulp.task('scripts', function() {
 	.on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
 	.pipe(gulp.dest(jsDest));
 });
-
-// Minify Images
-// gulp.task('images', function() {  
-// 	return gulp.src(imgFiles)
-// 	.pipe(imagemin([
-// 		imagemin.svgo({plugins: [{removeViewBox: false}]})
-// 	]))
-// 	.pipe(gulp.dest(imgDest));
-// });
-
-// Cleanup image directory
-// gulp.task('clean-img', function (cb) {
-// 	return del(imgDest,cb);
-// });
 
 // Watch and compile CSS and JS
 gulp.task('watch', function() {
