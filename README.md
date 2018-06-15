@@ -1,6 +1,10 @@
+# Intro
+Open index.HTML to run the demo
+See Dev folder for source code 
+See "Library" folder for processed code (CSS & JS are left unminified for readability)
+
 # HTML 
 markup added and validated according to w3c Markup Validation Service
-
 
 # CSS
 used Sass CSS processor with separate files for components. 
