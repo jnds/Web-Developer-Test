@@ -4,13 +4,11 @@
 ---------------------------------
 */
 
-// Footer
 
 .page-footer{
 	background-color: $dark-grey;
 	color: $white;
 
-	
 	.page-footer-inner{
 		width: 96%;
 		margin: 0 auto;
@@ -20,10 +18,6 @@
 		overflow: hidden;
 	}
 }
-
-
-
-
 
 @media (min-width:$screen-md-min) {
   

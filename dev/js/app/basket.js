@@ -1,4 +1,14 @@
-console.log('app');
+/*
+ * Object literal pattern (with jQuery) used to demonstrate the following:
+ * - simple modular javascript approach, 
+ * - scalability/separation of concerns 
+ * - efficient DOM usage
+ *
+ * To do:
+ * - Implement AJAX to post data in JSON format to a REST API endpoint
+ * - Determine a more suitable pattern for checkout module / incorporate a JS framework
+ *
+ */
 
 var basket = {
     subtotal: 0,

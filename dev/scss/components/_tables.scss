@@ -4,8 +4,7 @@ TABLES
 ---------------------------------
 */
 
-table,
-.table{
+table{
 	
 	width: 100%;
 	margin: 40px 0;
@@ -13,6 +12,7 @@ table,
 	thead{
 		border-bottom: 1px solid #000000;
 	}
+
 	tbody:before {
 	    content: "-";
 	    display: block;
@@ -20,8 +20,7 @@ table,
 	    color: transparent;
 	}
 
-	th,
-	.th{
+	th{
 		font-weight:normal;
 		text-align: left;
 	}
@@ -30,34 +29,33 @@ table,
     	padding: 5px 0;
 	}
 
-	td input.checkout-qty {
-		width: 40px;
-	}
-
-	tr.subtotal td{
-		padding-top: 40px;
-	}
-
+	tr.subtotal td,
 	tr.total-cost td{
 		padding-top: 40px;
 	}
+
+	.checkout-qty {
+		width: 40px;
+	}
+
+	.cost-value {
+	    width: 70px;
+	    display: inline-block;
+	    overflow: hidden;
+	    height: 16px;
+	    vertical-align: middle;
+	}
+
+	.delete-product{
+	  width: 30px; 
+	  height: 30px;
+	  background: url('../images/rubbish-bin.png') center center no-repeat;
+	  background-size: 22px 22px;
+	  text-indent: -9999px;
+	  display: block;
+	  cursor: pointer;
+	}
 }
 
-.cost-value {
-    width: 70px;
-    display: inline-block;
-    overflow: hidden;
-    height: 16px;
-    vertical-align: middle;
-}
 
-.delete-product{
-  width: 30px; 
-  height: 30px;
-  background: url('../images/rubbish-bin.png') center center no-repeat;
-  background-size: 22px 22px;
-  text-indent: -9999px;
-  display: block;
-  cursor: pointer;
-}
 

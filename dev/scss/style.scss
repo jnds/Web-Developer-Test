@@ -1,40 +1,25 @@
 @charset "UTF-8";
 
-
-/*
----------------------------------
-LIB
----------------------------------
-*/
-
 // Reset 
 @import "lib/reset";
 
 
-/*
----------------------------------
-PARTIALS
----------------------------------
-*/
+// PARTIALS
 
 // Sass Functions
-@import "partials/functions";
+// @import "partials/functions";
 
 // SASS Variables
 @import "partials/variables";
 
 // Mixins
-@import "partials/mixins";
+// @import "partials/mixins";
 
 // Font-Face Imports 
-@import "partials/fonts";
+// @import "partials/fonts";
 
 
-/*
----------------------------------
-COMPONENTS
----------------------------------
-*/
+// COMPONENTS
 
 // Buttons
 @import "components/buttons";
@@ -49,11 +34,7 @@ COMPONENTS
 @import "components/typography";
 
 
-/*
----------------------------------
-SECTIONS
----------------------------------
-*/
+//SECTIONS
 
 @import "sections/sections";
 

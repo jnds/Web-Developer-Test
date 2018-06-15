@@ -4,28 +4,11 @@
 ---------------------------------
 */
 
-// Header
-
 #page-header{
 	width: 96%;
 	margin: 0 auto;
 	padding: 40px 0;
 }
-
-
-@media (min-width:$screen-md-min) {
-  
-  #page-header{
-	width: 80%;
-	margin: 0 auto;
-	padding: 80px 0;
-  }
-
-} 
-
-
-
-// Logo
 
 #logo{ 
 	width: 120px;
@@ -36,3 +19,13 @@
 		height: auto;
 	}
 }
+
+@media (min-width:$screen-md-min) {
+  
+  #page-header{
+	width: 80%;
+	margin: 0 auto;
+	padding: 80px 0;
+  }
+
+} 
