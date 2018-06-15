@@ -1,5 +1,3 @@
-console.log('app');
-
 var basket = {
     subtotal: 0,
     vat: 0,
